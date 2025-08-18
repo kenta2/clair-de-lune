@@ -52,6 +52,8 @@ sv =  s8\sustainOff\sustainOn
 
 \parallelMusic #'(rhUpRed rhDownGreen lhUpBlue lhDownGrey)
 {
+  % avoid collision of tempo marking with slur
+  \once \override Score.MetronomeMark.padding = #4
   \tempo"Andante très expressif"
   \slurUp \phrasingSlurUp
   r8\pp \cl <f af>\( \cu <f' af> ~ <f af> 4. <df f>4.\) ~ |
@@ -553,6 +555,11 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   <<
     % https://lilypond.org/doc/v2.24/Documentation/notation/horizontal-spacing-overview
     %\override Score.SpacingSpanner #'shortest-duration-space = #1.7
+    % Incomprehensibly, need to increase shortest-duration-space from
+    % default 2.0 to 2.1 in order to make first page 4 lines instead
+    % of 3, but this only matters when \once \override
+    % Score.MetronomeMark.padding = #4
+    \override Score.SpacingSpanner.shortest-duration-space = #2.1
     % The 'piano' accidental style has extraNaturals false by default
     %\set PianoStaff.extraNatural = ##f
     #(set-accidental-style 'piano 'Score)
