@@ -27,7 +27,7 @@
   between-system-padding = 1
   ragged-last-bottom = ##f
 }
-% Definitios to override page-breaking 
+% Definitions to override page-breaking 
 myExplicitBreak = {
   \break
 }
