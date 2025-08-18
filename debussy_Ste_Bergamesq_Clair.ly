@@ -17,12 +17,10 @@
 }
 \pointAndClickOff
 \paper {
-  %{
   #(set-paper-size "letter")
-  annotate-spacing = ##t
-  ragged-bottom = ##t
-  bottom-margin =12
-  %}
+  %annotate-spacing = ##t
+  %ragged-bottom = ##t
+  %bottom-margin =12
   #(layout-set-staff-size 18)
   between-system-padding = 1
   ragged-last-bottom = ##f
