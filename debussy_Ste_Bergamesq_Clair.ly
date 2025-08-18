@@ -125,6 +125,8 @@ sv =  s8\sustainOff\sustainOn
   r8 <f, bf>4~<f bf>2. |
   \tieUp r8 ef4 ~ \times 3/2 {ef8 df8 ~} df4. |
   <<bf2. {s8 <f' bf>4~<f bf>2.}>> |
+  \myExplicitPageBreak
+
 }
 rhUp = \relative c' \rhUpRed
 rhDown = \relative c' \rhDownGreen
@@ -295,6 +297,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   df,4. f af |
   % Use flats so the reader can recognize this as d flat minor,
   %  the same as in the previous measure
+  \myExplicitPageBreak
 
 }
 rhUp = {\rhUp \relative c' \rhUpRed}
