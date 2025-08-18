@@ -511,7 +511,7 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
 \parallelMusic #'(rhUpRed rhDownGreen lhUpBlue lhDownGrey)
 {
   \barNumberCheck#66
-  r4\ppp^\markup\italic"morendo jusqu'à la fin" s8 r4 s8 r4 s8 |
+  r4\pp^\markup\italic"morendo jusqu'à la fin" s8 r4 s8 r4 s8 |
   s8*9 |
   \slurDown\phrasingSlurDown\stemNeutral
   df16\( af' df f\cu af df\)\cl f,,\( c' f\cu af c f\)\cl df,,\( af' df f\cu af df\)\cl |
