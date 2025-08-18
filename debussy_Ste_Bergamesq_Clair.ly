@@ -394,7 +394,7 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
   \stemUp df,2. \stemNeutral c16_\( ef gf bf \cu c ef\) \cl |
   gf4_( af8 bf4 df8 c4.) |
 
-  \ottava #1 <ef>2.^\( ~ ef4. ~ |
+  \ottava #0 <ef>2.^\( ~ ef4. ~ |
   s8*9 |
   \phrasingSlurUp
   gf,16\( bf df\cu ef gf bf\)\cl gf,16\( bf df\cu ef gf c\)\cl gf,16\( bf df\cu ef gf bf\)\cl |
