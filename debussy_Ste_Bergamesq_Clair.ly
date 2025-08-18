@@ -172,6 +172,7 @@ lhDown= \relative c' \lhDownGrey
   \times 3/2 {r8 \clef treble <f' gf bf>--~} <f gf bf> <gf bf ef>-- <f gf bf>--
   %{ %}  <ef gf bf>-- <f gf bf>-- <ef gf bf>-- |
   \clef bass <ef ef,>2. s4. |
+  \myExplicitBreak
 
   <df bf' df>8-- <ef bf' ef>-- <df bf' df>-- \times3/2{
     <c bf' c>-- \acciaccatura{\slurUp ef'}<df, bf' df>--
@@ -196,6 +197,7 @@ lhDown= \relative c' \lhDownGrey
   \stemUp r8 \stemNeutral <gf c ef>--_( <gf c ef>--
   %{ %} <gf c ef>-- <gf c ef>-- <af c ef>-- <gf c ef>4.--) |
   \stemDown <bff, bff,>2. s4. |
+  \myExplicitBreak
 
   \stemUp
   r8*9/6 \times 9/6 {<gf gf'>8[( <af af'> <df df'> <bf bf'> <gf gf'>]) } |
@@ -218,6 +220,7 @@ lhDown= \relative c' \lhDownGrey
   \stemUp r8*9/6 \stemDown \times 9/6 {gf8[ af ef' df bf] } |
   << { <df df,>2. s4.}
   %{ %} {s8*9/6 \stemUp <bf' df>4.*9/6 <gf' bf>4*9/6 } >> |
+  \myExplicitBreak
 
   \stemNeutral
   r8 <bf gf' bf>-- <bf gf' bf>-- <bf gf' bf>-- <bf gf' bf>--
