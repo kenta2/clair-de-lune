@@ -479,6 +479,8 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
 
   \barNumberCheck#59
 
+  \myExplicitBreak
+
   \ottava #0
   r8 <f, af>4 \stemNeutral <f'' af>4. <df f>\) ~ |
   s8*9 |
