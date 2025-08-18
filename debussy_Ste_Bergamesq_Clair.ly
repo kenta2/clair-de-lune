@@ -165,7 +165,7 @@ lhDown= \relative c' \lhDownGrey
   \clef bass <ef ef,>2. s4. |
 
   <df bf' df>8-- <ef bf' ef>-- <df bf' df>-- \times3/2{
-    <bf' c>-- \acciaccatura{\slurUp ef}<df, bf' df>--
+    <c bf' c>-- \acciaccatura{\slurUp ef'}<df, bf' df>--
   } <bf gf' bf>4.--\)~|
   s8*9 |
   <df gf bf>8-- <ef gf bf>-- <df gf bf>--
