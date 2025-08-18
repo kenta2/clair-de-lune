@@ -23,8 +23,13 @@
   %ragged-bottom = ##t
   %bottom-margin =12
   #(layout-set-staff-size 20)
-  between-system-padding = 1
   ragged-last-bottom = ##f
+  system-system-spacing = #'(
+                             (basic-distance . 15)
+                             (minimum-distance . 0)
+                             (padding . 1)
+                             (stretchability 1.0e7)
+                           )
 }
 % Definitions to override page-breaking
 myExplicitBreak = {
