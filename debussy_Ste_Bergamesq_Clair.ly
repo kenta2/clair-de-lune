@@ -7,6 +7,7 @@
   mutopiainstrument = "Piano"
   source = "E. Fromont (1905)"
   % Plate E. 1404 F.  IMSLP #02907
+  % https://imslp.org/wiki/Special:ReverseLookup/83536
   style = "Modern"
   copyright = "Public Domain"
   maintainer = "Keith OHara"
@@ -64,6 +65,7 @@ sv =  s8\sustainOff\sustainOn
 
   <df f>8\( <c ef> <df f> <c ef>2.\) ~ |
   s8*9 |
+  % NB the double-flats are not present in the original IMSLP score, which has A natural
   <gf bff>2.~<gf bff>4. |
   s8*9 |
 
