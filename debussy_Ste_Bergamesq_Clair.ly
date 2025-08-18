@@ -37,7 +37,7 @@ myExplicitPageBreak = {
 
 % restrain the slope of the beams
 oflat = {
-  \once\override Beam #'damping = #3
+  \once\override Beam.damping = #3
 }
 % Change staff
 cu = { \change Staff = "upper" }
