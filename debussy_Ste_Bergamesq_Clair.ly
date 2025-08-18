@@ -310,7 +310,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
 {
   \barNumberCheck#37
   \tempo"En animant"
-  \key cs \minor \mergeDifferentlyDottedOn \ottava #1
+  \key cs \minor \mergeDifferentlyDottedOn \ottava #0
   cs4(       gs8)  e'4(      cs8)   gs'4(       e8)  |
   cs8. cs,16 gs' e e'8. e,16 cs' gs gs'8. gs,16 e' b |
   \key cs \minor \clef treble \stemUp
@@ -334,7 +334,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   b,16\( ds fs\cu fs cs' a\)\cl a,\( cs e \cu fs cs' a\)\cl gs,\( cs e a\cu e' a\)\cl |
   b4. a gs |
 
-  \ottava #1
+  \ottava #0
   <cs e>8\( <b ds> <a cs> \times 3/2{<gs b> <fs a> ~} <fs a> <e gs> <ds fs>\) |
   s8*9 \f \ottava #0 |
   fs,,16^( cs' e fs a cs e fs e cs a fs) e( fs e cs a fs) |
