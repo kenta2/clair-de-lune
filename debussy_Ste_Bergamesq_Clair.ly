@@ -21,7 +21,7 @@
   %annotate-spacing = ##t
   %ragged-bottom = ##t
   %bottom-margin =12
-  #(layout-set-staff-size 18)
+  #(layout-set-staff-size 20)
   between-system-padding = 1
   ragged-last-bottom = ##f
 }
@@ -550,7 +550,8 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
 \score {
   \new PianoStaff
   <<
-    \override Score.SpacingSpanner #'shortest-duration-space = #1.7
+    % https://lilypond.org/doc/v2.24/Documentation/notation/horizontal-spacing-overview
+    %\override Score.SpacingSpanner #'shortest-duration-space = #1.7
     % The 'piano' accidental style has extraNaturals false by default
     %\set PianoStaff.extraNatural = ##f
     #(set-accidental-style 'piano 'Score)
