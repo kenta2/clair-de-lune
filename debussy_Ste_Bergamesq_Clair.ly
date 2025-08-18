@@ -222,7 +222,6 @@ lhDown= \relative c' \lhDownGrey
   s8*9 |
   <ef gf af df ef>2.--\arpeggio <af, ef' gf c>4.--\arpeggio |
   s8*9 |
-  \myExplicitPageBreak
 }
 rhUp = {\rhUp \relative c'' \rhUpRed}
 rhDown = {\rhDown \relative c \rhDownGreen}
@@ -396,7 +395,6 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
   s8*9 |
   gf,16\( a df\cu ef gf a\)\cl gf,16\( a df\cu ef gf cf\)\cl gf,16\( a df\cu ef gf a\)\cl |
   gf2.~gf4. |
-  \myExplicitPageBreak
 
 }
 rhUp = {\rhUp \relative c' \rhUpRed}
