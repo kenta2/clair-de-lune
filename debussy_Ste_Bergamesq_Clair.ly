@@ -27,7 +27,7 @@
   between-system-padding = 1
   ragged-last-bottom = ##f
 }
-% Definitions to override page-breaking 
+% Definitions to override page-breaking
 myExplicitBreak = {
   \break
 }
@@ -47,14 +47,14 @@ cl = { \change Staff = "lower" }
 % Suspend collision resolution so notes line up
 lu = {\once \override NoteColumn #'ignore-collision = ##t }
 % simpler sustain commands
-sd =  s8\sustainOn 
+sd =  s8\sustainOn
 su =  s8\sustainOff
 sv =  s8\sustainOff\sustainOn
 
 \parallelMusic #'(rhUpRed rhDownGreen lhUpBlue lhDownGrey)
 {
   \tempo"Andante très expressif"
-  \slurUp \phrasingSlurUp 
+  \slurUp \phrasingSlurUp
   r8\pp \cl <f af>\( \cu <f' af> ~ <f af> 4. <df f>4.\) ~ |
   \stemDown \tieDown s8*9 |
   \dynamicUp \stemUp r8 \lu <f af>4 ~ <f af>2. |
@@ -128,17 +128,17 @@ sv =  s8\sustainOff\sustainOn
   \tieUp r8 ef4 ~ \times 3/2 {ef8 df8 ~} df4. |
   <<bf2. {s8 <f' bf>4~<f bf>2.}>> |
 }
-rhUp = \relative c' \rhUpRed 
-rhDown = \relative c' \rhDownGreen 
+rhUp = \relative c' \rhUpRed
+rhDown = \relative c' \rhDownGreen
 lhUp = \relative c' \lhUpBlue
 lhDown= \relative c' \lhDownGrey
 
 \parallelMusic #'(rhUpRed rhDownGreen lhUpBlue lhDownGrey)
 {
   \barNumberCheck#15
-  \tempo"Tempo rubato" 
+  \tempo"Tempo rubato"
   \stemNeutral \tieNeutral
-  \times 3/2 {r8  <f bf f'>--(~} <f bf f'> <ef bf' ef>-- <ef bf' ef>-- 
+  \times 3/2 {r8  <f bf f'>--(~} <f bf f'> <ef bf' ef>-- <ef bf' ef>--
   %{ %} <ef bf' ef>-- <df bf' df>-- <df bf' df>-- |
   s8*9 |
   \tieNeutral
@@ -146,10 +146,10 @@ lhDown= \relative c' \lhDownGrey
   %{ %}  <ef gf bf>-- <df gf bf>-- <df gf bf>-- |
   <ef ef,>2. s4. |
 
-  <df bf' df>8-- <c gf' bf c>-- <c gf' bf c>-- 
+  <df bf' df>8-- <c gf' bf c>-- <c gf' bf c>--
   %{ %} \times 3/2 {<c gf' bf c>-- <df bf' df>--} <bf gf' bf>4.--)|
   s8*9 |
-  <df gf bf>8-- <c gf' bf>-- <c gf' bf>-- 
+  <df gf bf>8-- <c gf' bf>-- <c gf' bf>--
   %{ %} \times 3/2 {<c gf' bf>-- <df gf bf>--} <bf df gf>4.--|
   s8*9 |
 
@@ -164,46 +164,46 @@ lhDown= \relative c' \lhDownGrey
     <bf' c>-- \acciaccatura{\slurUp ef}<df, bf' df>--
   } <bf gf' bf>4.--\)~|
   s8*9 |
-  <df gf bf>8-- <ef gf bf>-- <df gf bf>-- 
+  <df gf bf>8-- <ef gf bf>-- <df gf bf>--
   %{ %} \times 3/2 {<c gf' bf>-- <df gf bf>--} <bf ef gf>4.--|
   s8*9 |
 
   \barNumberCheck#19
 
-  \times 9/6 { <bf gf' bf>8[( <gf gf'> 
+  \times 9/6 { <bf gf' bf>8[( <gf gf'>
   %{ %} <af ef' af> <c c'> <bf gf' bf> <gf gf'>]) } |
   s8*9^\markup\italic"peu à peu,  cresc. et animé . . ." |
   r8*9/6 \stemDown \times 9/6 {gf8[ af c bf gf] } |
   << { \clef bass <af af,>2. s4.}
   %{ %} {s4*9/6 \stemUp <c' ef>4*9/6 <ef gf>4*9/6 } >> |
 
-  r8 <gf c ef gf>-- <gf c ef gf>-- 
+  r8 <gf c ef gf>-- <gf c ef gf>--
   %{ %} <gf c ef gf>-- <gf c ef gf>-- <af c ef af>-- <gf c ef gf>4.-- |
   s8*9 |
-  \stemUp r8 \stemNeutral <gf c ef>--_( <gf c ef>-- 
+  \stemUp r8 \stemNeutral <gf c ef>--_( <gf c ef>--
   %{ %} <gf c ef>-- <gf c ef>-- <af c ef>-- <gf c ef>4.--) |
   \stemDown <bff, bff,>2. s4. |
 
-  \stemUp 
+  \stemUp
   r8*9/6 \times 9/6 {<gf gf'>8[( <af af'> <df df'> <bf bf'> <gf gf'>]) } |
   s8*9/6 df''4. s8*9/6 gf4*9/6 |
   \stemUp r8*9/6 \stemDown \times 9/6 {gf8[ af df bf gf] } |
-  << { <bf bf,>2. s4.} 
+  << { <bf bf,>2. s4.}
   %{ %} {s8*9/6 \stemUp <bf' df>4. s8*9/6 <df gf>4*9/6 } >> |
 
   \stemNeutral
-  r8 <gf bf ef gf>-- <gf bf ef gf>-- 
+  r8 <gf bf ef gf>-- <gf bf ef gf>--
   %{ %} <gf bf ef gf>-- <gf bf ef gf>-- <af c f af>-- <gf bf ef gf>4.-- |
   s8*9 |
-  \stemUp r8 \stemNeutral <gf bf ef>--_( <gf bf ef>-- 
+  \stemUp r8 \stemNeutral <gf bf ef>--_( <gf bf ef>--
   %{ %} <gf bf ef>-- <gf bf ef>-- <af c f>-- <gf bf ef>4.--) |
   \stemDown <af, af,>2. s4. |
 
-  \stemUp 
+  \stemUp
   r8*9/6 \times 9/6 {<gf gf'>8[( <af af'> <ef' ef'> <df df'> <bf bf'>]) } |
   s8*9/6 <bf, df>4.*9/6 <gf' bf>4*9/6 |
   \stemUp r8*9/6 \stemDown \times 9/6 {gf8[ af ef' df bf] } |
-  << { <df df,>2. s4.} 
+  << { <df df,>2. s4.}
   %{ %} {s8*9/6 \stemUp <bf' df>4.*9/6 <gf' bf>4*9/6 } >> |
 
   \stemNeutral
@@ -238,15 +238,15 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   \stemUp
   <f af>2.( <af cf>4 df8 ) |
   s8*9 \pp|
-  \slurDown \phrasingSlurDown \dynamicUp \stemNeutral  
+  \slurDown \phrasingSlurDown \dynamicUp \stemNeutral
   \clef bass df16\( af' df f\cu af df\)
   %{ %} \cl f,,\( c' f\cu af c f\) \cl af,,\( ff' af\cu cf ff af\) \cl |
-  \clef bass \mergeDifferentlyDottedOn 
+  \clef bass \mergeDifferentlyDottedOn
   df4. f af |
 
   <f, af>2.( <af cf>4 af8 ) |
   s8*9 |
-  df,,,16\( af' df f\cu af df\) 
+  df,,,16\( af' df f\cu af df\)
   %{ %} \cl f,,\( c' f\cu af c f\) \cl af,,\( ff' af\cu cf af' ff\) \cl |
   df,4. f af |
 
@@ -280,12 +280,12 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
 
   bf'2. af4.) |
   s8*9 |
-  \clef treble \stemNeutral d16\( gf bf\cu bf gf' bf\)\cl 
+  \clef treble \stemNeutral d16\( gf bf\cu bf gf' bf\)\cl
   %{%} ef,,\( gf bf\cu bf gf' bf\)\cl c,,\( e af\cu c e af\)\cl |
   d4. ef af, |
 
   <f af>2.( <af cf>4 df8) |
-  s8 \once\override TextScript #'outside-staff-priority = ##f 
+  s8 \once\override TextScript #'outside-staff-priority = ##f
   %{%} s1^\markup\italic"cresc." |
   \clef bass df,,,16\( af' df f\cu af df\)\cl
   %{%} af,\( c f af\cu c f\)\cl  cf,\( ff af\cu cf ff af\)\cl |
@@ -295,7 +295,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   s8*9 |
   df,,,16\( af' df f\cu af df\)\cl
   %{ %} af,\( c f af\cu c f\)\cl  cf,\( ff af\cu cf af' ff\)\cl |
-  df,4. f af | 
+  df,4. f af |
   % Use flats so the reader can recognize this as d flat minor,
   %  the same as in the previous measure
 
@@ -357,7 +357,7 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
   \tempo"Calmato" \key df \major \tieUp
   <df ef>2.( <ef gf>4 <ef gf bf>8) |
 	      \slurDown gf4(\pp af8 bf4 df8 c4.) |
-  \key df \major 
+  \key df \major
   af16( ef' af, ef' af, ef' af, ef' af, ef' af, ef' af, ef' af, ef' af, ef' |
   s8*9 |
 
@@ -409,11 +409,11 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
 \parallelMusic #'(rhUpRed rhDownGreen lhUpBlue lhDownGrey)
 {
   \barNumberCheck#51
-  \tempo"a Tempo 1º" \newSpacingSection 
+  \tempo"a Tempo 1º" \newSpacingSection
   \stemNeutral
   r4._\markup\dynamic"ppp" \ottava #1 <f af>4.\( f4. ~ |
   \stemDown \tieDown s8*9 |
-  \stemUp 
+  \stemUp
   f16_\( af c f af c \cu\hideNotes af'4.\) \unHideNotes\cl r4. |
   f2._- f4._- |
 
@@ -548,7 +548,7 @@ rhDown = {\rhDown \relative c'' \rhDownGreen}
 lhUp = {\lhUp \relative c, \lhUpBlue }
 lhDown= {\lhDown \relative c, \lhDownGrey }
 
-\score { 
+\score {
   \new PianoStaff
   <<
     \override Score.SpacingSpanner #'shortest-duration-space = #1.7
@@ -558,10 +558,10 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
     \set PianoStaff.printKeyCancellation = ##f
     \override PianoStaff.DynamicLineSpanner #'staff-padding = #2
     \override PianoStaff.DynamicText #'self-alignment-X = #LEFT
-    \new Staff = "upper" << 
+    \new Staff = "upper" <<
       \key df \major
       \time 9/8
-      \override PianoStaff.PhrasingSlur #'height-limit = #5 
+      \override PianoStaff.PhrasingSlur #'height-limit = #5
       \new Voice = "red" {
 	%{colorize } \override NoteHead #'color = #red %}
 	\rhUp
@@ -573,7 +573,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
       \new Voice = "dynamics" {
       }
     >>
-    \new Staff = "lower" << 
+    \new Staff = "lower" <<
       \key df \major
       \time 9/8
       \new Voice = "blue" {
