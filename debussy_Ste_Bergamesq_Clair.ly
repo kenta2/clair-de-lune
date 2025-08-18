@@ -240,6 +240,8 @@ lhDown= \relative c' \lhDownGrey
   s8*9 |
   <ef gf af df ef>2.--\arpeggio <af, ef' gf c>4.--\arpeggio |
   s8*9 |
+
+\myExplicitBreak
 }
 rhUp = {\rhUp \relative c'' \rhUpRed}
 rhDown = {\rhDown \relative c \rhDownGreen}
@@ -264,6 +266,8 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   df,,,16\( af' df f\cu af df\)
   %{ %} \cl f,,\( c' f\cu af c f\) \cl af,,\( ff' af\cu cf af' ff\) \cl |
   df,4. f af |
+
+\myExplicitPageBreak
 
   <f df'>4(\< <af ef'>8 <df f>4. <f, df'>4 <df' f>8) |
   s8*9 |
