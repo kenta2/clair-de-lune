@@ -36,6 +36,7 @@ myExplicitPageBreak = {
 \include "english.ly"
 
 % restrain the slope of the beams
+% (this definition is not used.)
 oflat = {
   \once\override Beam.damping = #3
 }
