@@ -79,6 +79,8 @@ sv =  s8\sustainOff\sustainOn
   <f af>2.~<f af>4. |
   s8*9 |
 
+  \myExplicitBreak
+
   <df>8 <af c> <bf df> <af c>2.\) ~ |
   bf8 s1 |
   <ef gf>2.~<ef gf>4. |
@@ -567,7 +569,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
     % default 2.0 to 2.1 in order to make first page 4 lines instead
     % of 3, but this only matters when \once \override
     % Score.MetronomeMark.padding = #4
-    \override Score.SpacingSpanner.shortest-duration-space = #2.1
+    %\override Score.SpacingSpanner.shortest-duration-space = #2.1
     % The 'piano' accidental style has extraNaturals false by default
     %\set PianoStaff.extraNatural = ##f
     #(set-accidental-style 'piano 'Score)
