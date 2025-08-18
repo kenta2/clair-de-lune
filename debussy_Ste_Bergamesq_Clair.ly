@@ -44,7 +44,7 @@ oflat = {
 cu = { \change Staff = "upper" }
 cl = { \change Staff = "lower" }
 % Suspend collision resolution so notes line up
-lu = {\once \override NoteColumn #'ignore-collision = ##t }
+lu = {\once \override NoteColumn.ignore-collision = ##t }
 % simpler sustain commands
 sd =  s8\sustainOn
 su =  s8\sustainOff
@@ -99,7 +99,7 @@ sv =  s8\sustainOff\sustainOn
   r8 <f, af>4 \stemNeutral\tieNeutral <f'' af>4. <df f>\) ~ |
   s8*9 |
   s8*9 \clef treble |
-  \stemNeutral \once\override Beam #'positions = #'(3 . 3.5)
+  \stemNeutral \once\override Beam.positions = #'(3 . 3.5)
   <df, af'>8 \cu <f' af> \cl \clef treble <f' af>~<f af>2. |
 
   \stemUp\tieUp <df f>8\( ef f ef2.\) ~ |
@@ -285,7 +285,7 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   d4. ef af, |
 
   <f af>2.( <af cf>4 df8) |
-  s8 \once\override TextScript #'outside-staff-priority = ##f
+  s8 \once\override TextScript.outside-staff-priority = ##f
   %{%} s1^\markup\italic"cresc." |
   \clef bass df,,,16\( af' df f\cu af df\)\cl
   %{%} af,\( c f af\cu c f\)\cl  cf,\( ff af\cu cf ff af\)\cl |
@@ -463,7 +463,7 @@ lhDown= {\lhDown \relative c' \lhDownGrey }
   \ottava #0
   r8 <f, af>4 \stemNeutral <f'' af>4. <df f>\) ~ |
   s8*9 |
-  \stemNeutral\tieUp \once\override Beam #'positions = #'(3 . 3.5)
+  \stemNeutral\tieUp \once\override Beam.positions = #'(3 . 3.5)
   <df, af'>8[ \cu <f' af> \cl \clef treble <f' af>]~<f af>2. |
   s4. cf'2._> |
 
@@ -557,12 +557,12 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
     %\set PianoStaff.extraNatural = ##f
     #(set-accidental-style 'piano 'Score)
     \set PianoStaff.printKeyCancellation = ##f
-    \override PianoStaff.DynamicLineSpanner #'staff-padding = #2
-    \override PianoStaff.DynamicText #'self-alignment-X = #LEFT
+    \override PianoStaff.DynamicLineSpanner.staff-padding = #2
+    \override PianoStaff.DynamicText.self-alignment-X = #LEFT
     \new Staff = "upper" <<
       \key df \major
       \time 9/8
-      \override PianoStaff.PhrasingSlur #'height-limit = #5
+      \override PianoStaff.PhrasingSlur.height-limit = #5
       \new Voice = "red" {
 	%{colorize } \override NoteHead #'color = #red %}
 	\rhUp
