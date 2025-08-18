@@ -52,7 +52,8 @@ sv =  s8\sustainOff\sustainOn
 
 \parallelMusic #'(rhUpRed rhDownGreen lhUpBlue lhDownGrey)
 {
-  % avoid collision of tempo marking with slur
+  % avoid collision of tempo marking with slur.
+  % https://lilypond.org/doc/v2.24/Documentation/learning/fixing-overlapping-notation
   \once \override Score.MetronomeMark.padding = #4
   \tempo"Andante très expressif"
   \slurUp \phrasingSlurUp
