@@ -11,7 +11,7 @@
   style = "Modern"
   copyright = "Public Domain"
   maintainer = "Keith OHara"
-  title = "Suite Bergamasque – Clair de Lune"
+  title = \mutopiatitle
   composer = "Claude Debussy"
  footer = "Mutopia-2010/12/21-1778"
  tagline = \markup { \override #'(box-padding . 1.0) \override #'(baseline-skip . 2.7) \box \center-column { \small \line { Sheet music modified from \with-url #"http://www.MutopiaProject.org" \line { \teeny www. \hspace #-1.0 MutopiaProject \hspace #-1.0 \teeny .org \hspace #0.5 } • \line {  \hspace #0.5 Reference: \footer } } \line { \teeny \line { This sheet music has been placed in the public domain by the typesetter, for details see: \hspace #-0.5 \with-url #"http://creativecommons.org/licenses/publicdomain" http://creativecommons.org/licenses/publicdomain } } } }
