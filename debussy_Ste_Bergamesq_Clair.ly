@@ -267,8 +267,6 @@ lhDown= {\lhDown \relative c, \lhDownGrey }
   %{ %} \cl f,,\( c' f\cu af c f\) \cl af,,\( ff' af\cu cf af' ff\) \cl |
   df,4. f af |
 
-\myExplicitPageBreak
-
   <f df'>4(\< <af ef'>8 <df f>4. <f, df'>4 <df' f>8) |
   s8*9 |
   df,,16( af' df f af df f af f df af f af f df af df af) |
